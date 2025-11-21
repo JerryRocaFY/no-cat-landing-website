@@ -21,7 +21,7 @@ const products = [
     price: '$8.95',
     features: ['Patented Formula', 'Pet & People Friendly', 'Non-Toxic Biodegradable', 'Fragrance Free'],
     // Reliable placeholder for larger black bottle
-    image: '/images/9oz.png', 
+    image: '/images/8oz.png', 
     highlight: true
   }
 ];
