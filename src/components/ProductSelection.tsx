@@ -10,7 +10,7 @@ const products = [
     price: '$4.95', 
     features: ['Fragrance Free', 'Pet & People Friendly', 'Non-Toxic Biodegradable', 'TSA Compliant'],
     // Reliable placeholder for small black spray bottle
-    image: '/images/BothSizes.jpg', 
+    image: '/images/34oz.png', 
     highlight: false
   },
   {
@@ -21,7 +21,7 @@ const products = [
     price: '$8.95',
     features: ['Patented Formula', 'Pet & People Friendly', 'Non-Toxic Biodegradable', 'Fragrance Free'],
     // Reliable placeholder for larger black bottle
-    image: '/images/BothSizes.jpg', 
+    image: '/images/9oz.png', 
     highlight: true
   }
 ];
