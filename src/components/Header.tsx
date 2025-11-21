@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             <a href="#features" className="text-slate-300 hover:text-brand-400 font-medium transition-colors">Features</a>
             <a href="#how-it-works" className="text-slate-300 hover:text-brand-400 font-medium transition-colors">How it Works</a>
             <a href="#reviews" className="text-slate-300 hover:text-brand-400 font-medium transition-colors">Reviews</a>
-            <a href="#faq" className="text-slate-300 hover:text-brand-400 font-medium transition-colors">FAQ</a>
+            {/* <a href="#faq" className="text-slate-300 hover:text-brand-400 font-medium transition-colors">FAQ</a> */}
           </nav>
 
           {/* CTA Button */}
