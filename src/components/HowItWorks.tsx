@@ -11,7 +11,7 @@ const HowItWorks: React.FC = () => {
           <div className="order-2 lg:order-1">
              <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1535268620699-00c64511b912?auto=format&fit=crop&w=800&q=80" 
+                  src="/images/happy_cat_rolling.jpg" 
                   alt="Happy cat rolling on a clean carpet" 
                   className="rounded-3xl shadow-2xl z-10 relative border-4 border-slate-700/50"
                 />

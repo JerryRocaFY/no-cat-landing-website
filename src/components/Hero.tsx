@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           <div className="relative lg:h-auto">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-800 border-4 border-slate-700/50 aspect-square lg:aspect-[4/3] group">
                <img 
-                src="https://images.unsplash.com/photo-1519052537078-e6302a4968ef?auto=format&fit=crop&w=800&q=80" 
+                src="/images/happy_cat_rolling.jpg" 
                 alt="Content cat relaxing on a clean surface" 
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                />

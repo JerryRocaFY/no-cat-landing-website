@@ -7,10 +7,10 @@ const products = [
     name: 'No-Cat Travel Size',
     size: '3.4 fl oz',
     description: 'The perfect trial size or on-the-go companion. TSA-compliant, fitting easily into bags for emergencies anywhere.',
-    price: '$12.99', 
+    price: '$4.95', 
     features: ['Fragrance Free', 'Pet & People Friendly', 'Non-Toxic Biodegradable', 'TSA Compliant'],
     // Reliable placeholder for small black spray bottle
-    image: 'https://images.unsplash.com/photo-1585232350187-479b2b741b72?q=80&w=600&auto=format&fit=crop', 
+    image: '/images/BothSizes.jpg', 
     highlight: false
   },
   {
@@ -18,10 +18,10 @@ const products = [
     name: 'No-Cat Home Essential',
     size: '8 fl oz',
     description: 'Our signature concentrated formula. The professional choice for households with multiple pets or frequent accidents.',
-    price: '$24.99',
+    price: '$8.95',
     features: ['Patented Formula', 'Pet & People Friendly', 'Non-Toxic Biodegradable', 'Fragrance Free'],
     // Reliable placeholder for larger black bottle
-    image: 'https://images.unsplash.com/photo-1616353320547-59a93016714f?q=80&w=600&auto=format&fit=crop', 
+    image: '/images/BothSizes.jpg', 
     highlight: true
   }
 ];
