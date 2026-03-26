@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
                <img 
                 src="/images/nocat_small_and_large_products.jpg" 
                 alt="Content cat relaxing on a clean surface" 
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-contain transition-transform duration-500"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
                <div className="absolute bottom-6 left-6 bg-slate-900/50 backdrop-blur-md px-4 py-3 rounded-xl border border-white/10 shadow-lg">
