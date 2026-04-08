@@ -51,11 +51,11 @@ const Hero: React.FC = () => {
 
           {/* Hero Image */}
           <div className="relative lg:h-auto">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-100 dark:bg-slate-800 border-4 border-slate-200 dark:border-slate-700/50 aspect-square lg:aspect-[4/3] group">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-100 dark:bg-slate-800 border-4 border-slate-200 dark:border-slate-700/50 aspect-[3/4] lg:aspect-[3/4] group flex items-center justify-center p-6">
                <img
                 src="/images/nocat_small_and_large_products.jpg"
-                alt="Content cat relaxing on a clean surface"
-                className="w-full h-full object-contain transition-transform duration-500"
+                alt="No-Cat odor eliminator products"
+                className="max-w-full max-h-full object-contain transition-transform duration-500 drop-shadow-2xl"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-white/50 dark:from-slate-900/50 to-transparent"></div>
                <div className="absolute bottom-6 left-6 bg-white/70 dark:bg-slate-900/50 backdrop-blur-md px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 shadow-lg">
