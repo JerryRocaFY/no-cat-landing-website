@@ -6,6 +6,7 @@ import HowItWorks from './components/HowItWorks';
 import ProductSelection from './components/ProductSelection';
 import StainExpertAI from './components/StainExpertAI';
 import Footer from './components/Footer';
+import ReviewForm from './components/ReviewForm';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <ProductSelection />
         {/* AI Section placed strategically after products to answer specific doubts */}
         <StainExpertAI />
+        {/* Customer Review Form */}
+        <ReviewForm />
         
         {/* Simple Testimonial Banner */}
         <section id="reviews" className="py-20 bg-slate-800/70 text-white text-center">
