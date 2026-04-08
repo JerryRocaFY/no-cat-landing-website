@@ -20,7 +20,6 @@ function App() {
           <HowItWorks />
           <ProductSelection />
           <StainExpertAI />
-          <ReviewForm />
 
           {/* Simple Testimonial Banner */}
           <section id="reviews" className="py-20 bg-brand-50 dark:bg-slate-800/70 text-slate-900 dark:text-white text-center transition-colors duration-300">
@@ -50,6 +49,7 @@ function App() {
 
         </main>
         <Footer />
+        <ReviewForm />
       </div>
     </ThemeProvider>
   );
