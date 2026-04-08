@@ -8,6 +8,7 @@ import ProductSelection from './components/ProductSelection';
 import StainExpertAI from './components/StainExpertAI';
 import Footer from './components/Footer';
 import ReviewForm from './components/ReviewForm';
+import AsSeenIn from './components/AsSeenIn';
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
               <cite className="not-italic font-semibold text-brand-600 dark:text-brand-300 text-lg">— Sarah Jenkins, Cat Mom of 3</cite>
             </div>
           </section>
+
+          <AsSeenIn />
 
           <section className="py-24 bg-white dark:bg-slate-900 text-center transition-colors duration-300">
             <div className="max-w-3xl mx-auto px-4">
