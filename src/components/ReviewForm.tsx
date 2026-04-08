@@ -65,44 +65,44 @@ const ReviewForm: React.FC = () => {
 
   if (submitted) {
     return (
-      <section id="feedback" className="py-20 bg-slate-900">
+      <section id="feedback" className="py-20 bg-white dark:bg-slate-900 transition-colors duration-300">
         <div className="max-w-2xl mx-auto px-4 text-center">
-          <div className="bg-slate-800/50 rounded-2xl p-12 border border-slate-700/50">
-            <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-6" />
-            <h3 className="text-2xl font-bold text-white mb-3">Thank you for your review!</h3>
-            <p className="text-slate-400">Your feedback helps us make No-Cat even better.</p>
+          <div className="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-12 border border-slate-200 dark:border-slate-700/50">
+            <CheckCircle className="w-16 h-16 text-green-500 dark:text-green-400 mx-auto mb-6" />
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">Thank you for your review!</h3>
+            <p className="text-slate-600 dark:text-slate-400">Your feedback helps us make No-Cat even better.</p>
           </div>
         </div>
       </section>
     );
   }
 
-  const inputClass = "w-full bg-slate-800/50 border border-slate-600 text-white placeholder-slate-500 rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all";
-  const labelClass = "block text-sm font-semibold text-slate-300 mb-1.5";
+  const inputClass = "w-full bg-slate-50 dark:bg-slate-800/50 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 rounded-xl py-3 px-4 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all";
+  const labelClass = "block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5";
   const radioGroupClass = "flex flex-wrap gap-3";
   const radioLabelClass = (selected: boolean) =>
     `cursor-pointer px-4 py-2.5 rounded-xl border text-sm font-medium transition-all ${
       selected
         ? 'bg-brand-500 text-white border-brand-500 shadow-md shadow-brand-500/20'
-        : 'bg-slate-800/50 text-slate-400 border-slate-600 hover:border-brand-400'
+        : 'bg-slate-50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-400 border-slate-300 dark:border-slate-600 hover:border-brand-400'
     }`;
 
   return (
-    <section id="feedback" className="py-20 bg-slate-900">
+    <section id="feedback" className="py-20 bg-white dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-brand-400 font-semibold tracking-wide uppercase text-sm mb-2">We Value Your Opinion</h2>
-          <h3 className="text-3xl font-bold text-white sm:text-4xl">Please provide your review for No-Cat!</h3>
-          <p className="mt-4 text-lg text-slate-400">
+          <h2 className="text-brand-500 dark:text-brand-400 font-semibold tracking-wide uppercase text-sm mb-2">We Value Your Opinion</h2>
+          <h3 className="text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">Please provide your review for No-Cat!</h3>
+          <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">
             Your honest feedback helps us improve and helps other pet owners make informed decisions.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-slate-800/50 rounded-2xl p-8 md:p-10 border border-slate-700/50 backdrop-blur-sm space-y-8">
+        <form onSubmit={handleSubmit} className="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-8 md:p-10 border border-slate-200 dark:border-slate-700/50 dark:backdrop-blur-sm space-y-8 shadow-sm transition-colors duration-300">
           {/* Name Fields */}
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className={labelClass}>First Name <span className="text-red-400">*</span></label>
+              <label className={labelClass}>First Name <span className="text-red-500 dark:text-red-400">*</span></label>
               <input type="text" required value={firstName} onChange={e => setFirstName(e.target.value)} placeholder="First name" className={inputClass} />
             </div>
             <div>
@@ -113,16 +113,16 @@ const ReviewForm: React.FC = () => {
 
           {/* Email */}
           <div>
-            <label className={labelClass}>Email <span className="text-red-400">*</span></label>
+            <label className={labelClass}>Email <span className="text-red-500 dark:text-red-400">*</span></label>
             <input type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="you@example.com" className={inputClass} />
           </div>
 
           {/* Effectiveness Rating */}
           <div>
             <label className={labelClass}>
-              How effective was No-Cat at eliminating odors? <span className="text-red-400">*</span>
+              How effective was No-Cat at eliminating odors? <span className="text-red-500 dark:text-red-400">*</span>
             </label>
-            <p className="text-xs text-slate-500 mb-3">1 = Not effective, 5 = Extremely effective</p>
+            <p className="text-xs text-slate-400 dark:text-slate-500 mb-3">1 = Not effective, 5 = Extremely effective</p>
             <div className="flex gap-2">
               {[1, 2, 3, 4, 5].map(star => (
                 <button
@@ -138,7 +138,7 @@ const ReviewForm: React.FC = () => {
                     className={`transition-colors ${
                       star <= (hoveredStar || effectiveness)
                         ? 'text-yellow-400 fill-yellow-400'
-                        : 'text-slate-600'
+                        : 'text-slate-300 dark:text-slate-600'
                     }`}
                   />
                 </button>
@@ -149,7 +149,7 @@ const ReviewForm: React.FC = () => {
 
           {/* Ease of Use */}
           <div>
-            <label className={labelClass}>How easy was No-Cat to use? <span className="text-red-400">*</span></label>
+            <label className={labelClass}>How easy was No-Cat to use? <span className="text-red-500 dark:text-red-400">*</span></label>
             <div className={radioGroupClass}>
               {easeOfUseOptions.map(option => (
                 <label key={option} className={radioLabelClass(easeOfUse === option)}>
@@ -162,8 +162,8 @@ const ReviewForm: React.FC = () => {
 
           {/* Usage Location (multi-select) */}
           <div>
-            <label className={labelClass}>Where did you use No-Cat? <span className="text-red-400">*</span></label>
-            <p className="text-xs text-slate-500 mb-3">Select all that apply</p>
+            <label className={labelClass}>Where did you use No-Cat? <span className="text-red-500 dark:text-red-400">*</span></label>
+            <p className="text-xs text-slate-400 dark:text-slate-500 mb-3">Select all that apply</p>
             <div className={radioGroupClass}>
               {usageLocationOptions.map(option => {
                 const selected = usageLocations.includes(option);
@@ -190,7 +190,7 @@ const ReviewForm: React.FC = () => {
 
           {/* Liked Most */}
           <div>
-            <label className={labelClass}>What did you like most about No-Cat? <span className="text-red-400">*</span></label>
+            <label className={labelClass}>What did you like most about No-Cat? <span className="text-red-500 dark:text-red-400">*</span></label>
             <textarea required value={likedMost} onChange={e => setLikedMost(e.target.value)} rows={3} placeholder="Tell us what stood out to you..." className={inputClass + " resize-none"} />
           </div>
 
@@ -226,7 +226,7 @@ const ReviewForm: React.FC = () => {
             </div>
           </div>
 
-          {error && <p className="text-red-400 text-sm text-center">{error}</p>}
+          {error && <p className="text-red-500 dark:text-red-400 text-sm text-center">{error}</p>}
 
           {/* Submit */}
           <div className="pt-2">
